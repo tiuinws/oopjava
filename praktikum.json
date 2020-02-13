@@ -1,0 +1,13 @@
+{
+  "nama": "Praktikum Pemrograman Berorientasi Objek",
+  "praktikum": {
+    "praktikum 1": "Pemanasan Java",
+    "task": {
+      "task 1": "Membuat program inputan kode hari dan print harinya"
+    },
+    "praktikum 2": "Menyelami Method",
+    "task": {
+      "task 1": "Membuat beberapa method yang menerima dan mengembalikan nilai"
+    }
+  }
+}
