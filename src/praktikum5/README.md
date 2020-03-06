@@ -38,6 +38,14 @@ class Mahasiswa {
     void setNim(String nim){
         this.nim = nim
     }
+
+    String getName(){
+        return name;
+    }
+
+    String getNim(){
+        return nim;
+    }
 }
 ```
 
