@@ -7,27 +7,28 @@ import alfianLib.*;
 public class praktikum2 {
     public static void main(String[] args) {
         doCalculate calc = new doCalculate();
-        FunFunc func = new FunFunc();
-        func.println("Praktikum 2");
+        funFunc fun = new funFunc();
+        fun.outln("Praktikum 2");
         calc.inputNumber();
         if (calc.isEven() && calc.isPositive()) {
-            func.println(calc.number + " is even" + " and " + " is positive");
+            fun.outln(calc.number + " is even" + " and " + "is positive");
         } else if (calc.isEven() && !calc.isPositive()) {
-            func.println(calc.number + " is even" + " and " + " is negative");
+            fun.outln(calc.number + " is even" + " and " + "is negative");
         } else if (!calc.isEven() && calc.isPositive()) {
-            func.println(calc.number + " is odd" + " and " + " is positive");
+            fun.outln(calc.number + " is odd" + " and " + "is positive");
         } else {
-            func.println(calc.number + " is odd" + " and " + " is negative");
+            fun.outln(calc.number + " is odd" + " and " + "is negative");
         }
     }
 }
 
 class doCalculate {
     int number;
+    funFunc fun = new funFunc();
 
     int inputNumber() {
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("Input a number");
+        fun.outln("Input a number");
         number = myScanner.nextInt();
         return number;
     }

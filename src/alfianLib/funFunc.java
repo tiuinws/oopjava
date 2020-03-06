@@ -2,10 +2,9 @@ package alfianLib;
 
 import java.util.Scanner;
 
-public class FunFunc {
+public class funFunc {
 
-    /* Input */
-    Scanner scan = new Scanner(System.in);
+    /* Input */ Scanner scan = new Scanner(System.in);
 
     public String inStr() { return scan.next(); }
 
@@ -19,71 +18,52 @@ public class FunFunc {
 
     public int inInt(String word) { this.out(word); return scan.nextInt();}
 
-
     /* Output */
     public void out() { System.out.print(""); }
 
-    public void out(char c) {
-        System.out.print(c);
-    }
+    public void out(char c) { System.out.print(c); }
 
-    public void out(String s) {
-        System.out.print(s);
-    }
+    public void out(String s) { System.out.print(s); }
 
-    public void out(int i) {
-        System.out.print(i);
-    }
+    public void out(int i) { System.out.print(i); }
 
-    public void out(Double d) {
-        System.out.print(d);
-    }
+    public void out(Double d) { System.out.print(d); }
 
     public void out(String[] arrStr) {
         for (String s : arrStr) {
             System.out.print(s + " ");
-        }
-        System.out.println();
+        } System.out.println();
     }
 
     public void out(int[] arrInt) {
         for (int i : arrInt) {
             System.out.print(i + " ");
-        }
-        System.out.println();
+        } System.out.println();
     }
 
     public void out(String[] arrStr, int[] arrInt) {
-        int totalLength = arrStr.length + arrStr.length;
-        for (int i = 0; i < totalLength; i++) {
+        int totalLength = arrStr.length + arrStr.length; for (int i = 0; i < totalLength; i++) {
             if (i < arrStr.length && i < arrInt.length) {
                 System.out.print(arrStr[i] + " " + arrInt[i] + " ");
             }
-        }
-        System.out.println();
+        } System.out.println();
     }
 
     public void out(int[] arrInt, String[] arrStr) {
-        int totalLength = arrStr.length + arrInt.length;
-        for (int i = 0; i < totalLength; i++) {
+        int totalLength = arrStr.length + arrInt.length; for (int i = 0; i < totalLength; i++) {
             if (i < arrStr.length && i < arrInt.length) {
                 System.out.print(arrInt[i] + " " + arrStr[i] + " ");
             }
-        }
-        System.out.println();
+        } System.out.println();
     }
 
     public void outln() { System.out.println(); }
 
     public void outln(String s) { System.out.println(s); }
 
-    public void outln(int i) {
-        System.out.println(i);
-    }
+    public void outln(int i) { System.out.println(i); }
 
-    public void outln(Double d) {
-        System.out.println(d);
-    }
+    public void outln(Double d) { System.out.println(d); }
 
     public void outln(String[] arrStr) {
         for (String s : arrStr) {
@@ -98,8 +78,7 @@ public class FunFunc {
     }
 
     public void outln(int[] arrInt, String[] arrStr) {
-        int totalLength = arrStr.length + arrInt.length;
-        for (int i = 0; i < totalLength; i++) {
+        int totalLength = arrStr.length + arrInt.length; for (int i = 0; i < totalLength; i++) {
             if (i < arrStr.length && i < arrInt.length) {
                 System.out.println(arrInt[i] + " " + arrStr[i] + " ");
             }
@@ -107,8 +86,7 @@ public class FunFunc {
     }
 
     public void outln(String[] arrStr, int[] arrInt) {
-        int totalLength = arrStr.length + arrInt.length;
-        for (int i = 0; i < totalLength; i++) {
+        int totalLength = arrStr.length + arrInt.length; for (int i = 0; i < totalLength; i++) {
             if (i < arrStr.length && i < arrInt.length) {
                 System.out.println(arrStr[i] + " " + arrInt[i] + " ");
             }
