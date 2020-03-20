@@ -2,6 +2,7 @@ package alfianLib;
 
 public class alfianLibTest {
     public static void main(String[] args) {
+        /*
         mathOps math = new mathOps();
         funFunc fun = new funFunc();
         fun.outln(math.pi);
@@ -37,5 +38,16 @@ public class alfianLibTest {
         String firstMonth = math.head(math.monthNamesId);
         fun.outln(firstMonth);
         fun.outln(math.pct(100,5));
+        */
+        fn.outln(fn.pi);
+        fn.outln(mo.pct(50,2));
+        privateClass pc = new privateClass();
+        pc.greet();
+    }
+
+    private static class privateClass {
+        void greet() {
+            fn.out("Hello World from private class");
+        }
     }
 }

@@ -1,8 +1,6 @@
 package pbo;
 
-import alfianLib.funFunc;
-
-import java.util.Scanner;
+import alfianLib.fn;
 
 public class pbo {
     /*
@@ -23,17 +21,15 @@ public class pbo {
     }
      */
     public static void main(String[] args) {
-        funFunc fun = new funFunc();
-        Scanner scan = new Scanner(System.in);
 
         Mahasiswa mhs = new Mahasiswa("Budi", "1808096025", 4.0);
         //fun.println(mhs.ipk);
-        fun.outln(mhs.getName() + " " + mhs.getNIM() + " " + mhs.getIPK());
-        fun.outln(mhs.getCourse());
+        fn.outln(mhs.getName() + " " + mhs.getNIM() + " " + mhs.getIPK());
+        fn.outln(mhs.getCourse());
         mhs.setName("Alfian");
         mhs.setNIM("1808096025");
         mhs.setIPK(3.5);
-        fun.outln(mhs.getName() + " " + mhs.getNIM() + " " + mhs.getIPK());
+        fn.outln(mhs.getName() + " " + mhs.getNIM() + " " + mhs.getIPK());
     }
 }
 
@@ -56,7 +52,6 @@ class Mahasiswa {
     private String name;
     private String nim;
     private double ipk;
-    funFunc fun = new funFunc();
 
     Mahasiswa(String name, String nim, double ipk) { this.name = name; this.nim = nim; this.ipk = ipk; }
 
@@ -72,7 +67,7 @@ class Mahasiswa {
 
     void setIPK (double ipk) { this.ipk = ipk; }
 
-    private String addCourse() { Scanner scn = new Scanner(System.in); fun.out("Input Something : "); return scn.nextLine(); }
+    private String addCourse() { fn.out("Input Something : "); return fn.inLn(); }
 
     String getCourse() { return addCourse(); }
 }

@@ -12,10 +12,10 @@ public class praktikum5 {
         novel nv2 = new novel(listNovel[1][0], listNovel[1][1], listNovel[1][2], listNovel[1][3], listNovel[1][4]);
         novel nv3 = new novel(listNovel[2][0], listNovel[2][1], listNovel[2][2], listNovel[2][3], listNovel[2][4]);
         nv.getNovelDetails(); nv2.getNovelDetails(); nv3.getNovelDetails();
-        double totalBuyPrice = nv.math.sum(nv.getPrice(), nv.math.sum(nv2.getPrice(), nv3.getPrice()));
-        double totalSellPrice = nv.math.sum(nv.sellNovel(), nv.math.sum(nv2.sellNovel(), nv3.sellNovel()));
-        nv.fun.outln("Total Harga Beli : Rp" + (int) totalBuyPrice + ",00");
-        nv.fun.outln("Total Harga Jual : Rp" + (int)totalSellPrice + ",00");
+        double totalBuyPrice = mo.sum(nv.getPrice(), mo.sum(nv2.getPrice(), nv3.getPrice()));
+        double totalSellPrice = mo.sum(nv.sellNovel(), mo.sum(nv2.sellNovel(), nv3.sellNovel()));
+        fn.outln("Total Harga Beli : Rp" + (int) totalBuyPrice + ",00");
+        fn.outln("Total Harga Jual : Rp" + (int) totalSellPrice + ",00");
     }
 }
 
@@ -25,8 +25,6 @@ class novel {
     private String datePublished;
     private String desc;
     private double price;
-    mathOps math = new mathOps();
-    funFunc fun = new funFunc();
 
     public String getTitle() { return title; }
 
@@ -56,15 +54,16 @@ class novel {
         setPrice(Double.parseDouble(price));
     }
 
-    double sellNovel() { return math.sub(getPrice(), math.pct(getPrice(), 20)); }
+    double sellNovel() { return mo.sub(getPrice(), mo.pct(getPrice(), 20)); }
 
     void getNovelDetails() {
-        fun.outln("Title" + "\t\t: " + getTitle());
-        fun.outln("Author" + "\t\t: " + getAuthor());
-        fun.outln("Date Published" + "\t: " + getDatePublished());
-        fun.outln("Description" + "\t: " + getDesc());
-        fun.outln("Harga Beli" + "\t: Rp" + (int) getPrice() + ",00");
-        fun.outln("Harga Jual" + "\t: Rp" + (int) sellNovel() + ",00"); fun.outln();
+        fn.outln("Title" + "\t\t: " + getTitle());
+        fn.outln("Author" + "\t\t: " + getAuthor());
+        fn.outln("Date Published" + "\t: " + getDatePublished());
+        fn.outln("Description" + "\t: " + getDesc());
+        fn.outln("Harga Beli" + "\t: Rp" + (int) getPrice() + ",00");
+        fn.outln("Harga Jual" + "\t: Rp" + (int) sellNovel() + ",00");
+        fn.outln();
     }
 
 }
