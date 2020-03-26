@@ -20,6 +20,15 @@
     "praktikum 5": "Menyelami Kelas",
     "praktikum 5_tasks": {
       "task 1": "Membuat daftar novel dengan atribut yang sudah diset access modifier"
+    },
+    "praktikum 6": "What?",
+    "praktikum 6_tasks": {
+      "task 1": "Waste my time"
+    },
+    "praktikum 7": "Overloading and Overriding",
+    "praktikum 7_tasks": {
+      "task 1": "Membuat method @Override",
+      "task 2": "Wtf i should use english bitch"
     }
   }
 }
