@@ -32,6 +32,10 @@
     "praktikum 8": "Abstract and Interface",
     "praktikum 8_tasks": {
       "task 1": "Create abstract and interface class"
-    }
+    },
+    "praktikum 9": "Re-Polymorphism",
+    "praktikum 9_tasks": {
+      "task 1": "what is super(), abstract, implements, extends for?"
+    },
   }
 }
