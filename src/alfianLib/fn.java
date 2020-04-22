@@ -52,6 +52,8 @@ public class fn extends mo {
 
     public static void out(Double d) { System.out.print(d); }
 
+    public static void out(long l) { System.out.print(l); }
+
     public static void out(String[] arrStr) {
         for (String s : arrStr) {
             System.out.print(s + " ");

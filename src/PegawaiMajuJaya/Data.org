@@ -1,0 +1,44 @@
+* Intro
+CV. Maju Jaya memiliki 40 orang pegawai, dimana ke-40 pegawainya tersebut terbagi menjadi 2 status kepegawaian,
+yaitu sebagian pegawai tetap dan sisanya adalah pegawai kontrak.
+Secara umum perbedaan antara keduanya adalah pegawai tetap selain mendapatkan gaji juga mendapatkan tunjangan sebesar Rp500.000,- ,
+sedangkan pegawai kontrak hanya mendapatkan gaji saja.
+Dari kasus di atas, dapat digambarkan class-class pegawai sebagai berikut:
+1. Class PegawaiKontrak dengan atribut:
+   - noPeg	: no pegawai kontrak (diinputkan)
+   - nama	: nama pegawai (diinputkan)
+   - masaKontrak: lama kontrak pegawai (diinputkan)
+   - kehadiran	: jumlah hari masuk dalam 1 bulan (diinputkan)
+   - uangMakan	: besarnya Rp.25.000,- dikali kehadiran (tidak diinputkan)
+   - gajiPokok	: besarnya gaji pokok yang diterima tiap bulan (diinputkan)
+2. Class PegawaiTetap dengan atribut:
+   - noPeg	: no pegawai tetap (diinputkan)
+   - nama	: nama pegawai (diinputkan)
+   - kehadiran	: jumlah hari masuk dalam 1 bulan (diinputkan)
+   - tunjangan	: besarnya Rp.500.000,- (tidak diinputkan)
+   - uangMakan	: besarnya Rp.25.000,- dikali kehadiran (tidak diinputkan)
+   - gajiPokok	: besarnya gaji pokok yang diterima tiap bulan (diinputkan)
+Method-method yang harus ada:
+    1. hitungGaji()	: untuk menghitung gaji keseluruhan pegawai, dimana untuk pegawai kontrak = uang makan + gajiPokok, pegawai tetap = tunjangan + uang makan + gajiPokok.
+    2. lihatData()	: untuk menampilkan data-data pegawai secara lengkap beserta total gaji yang diterima
+Dari kedua class di atas, analisis dan desainlah superclass yang tepat untuk kasus tersebut.
+Setelah itu buatlah class utama yaitu class PegawaiMajuJaya (yang menggunakan class-class di atas) yang memiliki menu sebagai berikut:
+    1. Input Data Pegawai
+    2. Lihat Data Pegawai
+Pilihan Anda [1/2] : ……..
+Tentukan pula modifier yang tepat untuk semua class di atas (termasuk superclass-nya, mana yang final class dan mana yang abstract class, sedangkan interface sifatnya opsional (boleh digunakan/boleh tidak digunakan)
+
+
+* Data-Data
+  * Atributes
+    1. Kelas Pegawai
+       - noPeg
+       - nama
+       - kehadiran
+       - uangMakan
+       - gajiPokok
+    2. Kelas PegawaiKontrak
+       - masaKontrak
+    3. Kelas PegawaiTetap
+       - tunjangan
+      

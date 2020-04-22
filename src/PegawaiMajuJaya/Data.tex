@@ -1,0 +1,95 @@
+% Created 2020-04-18 Sat 20:49
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\section{Intro}
+\label{sec:org3b58515}
+CV. Maju Jaya memiliki 40 orang pegawai, dimana ke-40 pegawainya tersebut terbagi menjadi 2 status kepegawaian,
+yaitu sebagian pegawai tetap dan sisanya adalah pegawai kontrak.
+Secara umum perbedaan antara keduanya adalah pegawai tetap selain mendapatkan gaji juga mendapatkan tunjangan sebesar Rp500.000,- ,
+sedangkan pegawai kontrak hanya mendapatkan gaji saja.
+Dari kasus di atas, dapat digambarkan class-class pegawai sebagai berikut:
+\begin{enumerate}
+\item Class PegawaiKontrak dengan atribut:
+\begin{itemize}
+\item noPeg	: no pegawai kontrak (diinputkan)
+\item nama	: nama pegawai (diinputkan)
+\item masaKontrak: lama kontrak pegawai (diinputkan)
+\item kehadiran	: jumlah hari masuk dalam 1 bulan (diinputkan)
+\item uangMakan	: besarnya Rp.25.000,- dikali kehadiran (tidak diinputkan)
+\item gajiPokok	: besarnya gaji pokok yang diterima tiap bulan (diinputkan)
+\end{itemize}
+\item Class PegawaiTetap dengan atribut:
+\begin{itemize}
+\item noPeg	: no pegawai tetap (diinputkan)
+\item nama	: nama pegawai (diinputkan)
+\item kehadiran	: jumlah hari masuk dalam 1 bulan (diinputkan)
+\item tunjangan	: besarnya Rp.500.000,- (tidak diinputkan)
+\item uangMakan	: besarnya Rp.25.000,- dikali kehadiran (tidak diinputkan)
+\item gajiPokok	: besarnya gaji pokok yang diterima tiap bulan (diinputkan)
+\end{itemize}
+\end{enumerate}
+Method-method yang harus ada:
+\begin{enumerate}
+\item hitungGaji()	: untuk menghitung gaji keseluruhan pegawai, dimana untuk pegawai kontrak = uang makan + gajiPokok, pegawai tetap = tunjangan + uang makan + gajiPokok
+
+\item lihatData()	: untuk menampilkan data-data pegawai secara lengkap beserta total gaji yang diterima
+\end{enumerate}
+Dari kedua class di atas, analisis dan desainlah superclass yang tepat untuk kasus tersebut. Setelah itu buatlah class utama yaitu class PegawaiMajuJaya (yang menggunakan class-class di atas) yang memiliki menu sebagai berikut:
+\begin{enumerate}
+\item Input Data Pegawai
+\item Lihat Data Pegawai
+\end{enumerate}
+Pilihan Anda [1/2] : ……..
+Tentukan pula modifier yang tepat untuk semua class di atas (termasuk superclass-nya, mana yang final class dan mana yang abstract class, sedangkan interface sifatnya opsional (boleh digunakan/boleh tidak digunakan)
+
+
+\section{Data-Data}
+\label{sec:org03057fc}
+\begin{itemize}
+\item Atributes
+\begin{enumerate}
+\item Kelas Pegawai
+\begin{itemize}
+\item noPeg
+\item nama
+\item kehadiran
+\item uangMakan
+\item gajiPokok
+\end{itemize}
+\item Kelas PegawaiKontrak
+\begin{itemize}
+\item masaKontrak
+\end{itemize}
+\item Kelas PegawaiTetap
+\begin{itemize}
+\item tunjangan
+\end{itemize}
+\end{enumerate}
+\end{itemize}
+\end{document}
